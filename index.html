@@ -1,16 +1,272 @@
-<!doctype html>
-<html lang="pl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Inoya</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INOYA — A safe place for your moments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<main class="wrap">
-    <h1>Inoya</h1>
-    <p>Landing page w budowie 🌿</p>
-    <a class="btn" href="#" aria-disabled="true">Pobierz aplikację</a>
-</main>
+
+<!-- =============== NAVIGATION =============== -->
+<nav class="nav" id="nav">
+    <div class="container nav-inner">
+        <a href="#" class="nav-logo">INOYA</a>
+        <ul class="nav-links">
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#pillars">Features</a></li>
+            <li><a href="#moment">Moments</a></li>
+            <li><a href="#emotions">Emotions</a></li>
+        </ul>
+        <a href="#cta" class="nav-cta">Get early access</a>
+        <button class="nav-mobile-toggle" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- =============== HERO =============== -->
+<section class="hero" id="hero">
+    <div class="hero-content fade-in">
+        <span class="hero-badge">Mindful living, beautifully captured</span>
+        <h1>A safe place<br />for <em>your moments</em></h1>
+        <p class="hero-sub">
+            INOYA is a quiet space to preserve what matters — your memories, emotions, and intentions.
+            No pressure. No judgement. Just presence.
+        </p>
+        <div class="hero-actions">
+            <a href="#cta" class="btn btn-primary">Join the waitlist</a>
+            <a href="#philosophy" class="btn btn-ghost">Learn more</a>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="arrow"></div>
+    </div>
+</section>
+
+<!-- =============== PHILOSOPHY =============== -->
+<section class="philosophy" id="philosophy">
+    <div class="container philosophy-inner">
+        <div class="philosophy-text fade-in">
+            <h2>Not an app.<br />An <em>ecosystem of states.</em></h2>
+            <p>
+                INOYA doesn't describe a function — it invites an experience.
+                Inspired by the Japanese concepts of <strong>inochi</strong> (life),
+                <strong>inori</strong> (intention), and <strong>ya</strong> (a place of shelter),
+                INOYA is a home for what is alive and meaningful in you.
+            </p>
+            <p>
+                It's a name that lives alongside its user — growing in meaning
+                as you grow in awareness.
+            </p>
+        </div>
+        <div class="philosophy-visual fade-in">
+            <div class="kanji-card">
+                <div class="kanji-main">命</div>
+                <h3>INOYA</h3>
+                <p>where moments live</p>
+                <div class="meaning-tags">
+                    <span class="meaning-tag life">inochi — life</span>
+                    <span class="meaning-tag intention">inori — intention</span>
+                    <span class="meaning-tag place">ya — place</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============== PILLARS =============== -->
+<section class="pillars" id="pillars">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-label">Five pillars</span>
+            <h2>One space, many states of being</h2>
+            <p>
+                Each pillar responds to a different emotional need — never mixing
+                rest with growth, being with doing, silence with analysis.
+            </p>
+        </div>
+        <div class="pillars-grid stagger">
+            <!-- Pillar 1 -->
+            <div class="pillar-card">
+                <div class="pillar-icon memories">🌿</div>
+                <h3>Memories</h3>
+                <p class="pillar-mood">"What I have lived"</p>
+                <p>
+                    The heart of INOYA. A timeline and map of your moments — no judgement, no goals.
+                    Just life as it is, beautifully preserved.
+                </p>
+            </div>
+            <!-- Pillar 2 -->
+            <div class="pillar-card">
+                <div class="pillar-icon space">🌊</div>
+                <h3>Affirmative Space</h3>
+                <p class="pillar-mood">"I am here. I need nothing."</p>
+                <p>
+                    A lean-back space for emotional regulation. Gentle affirmations,
+                    soft music, no tasks. Just being.
+                </p>
+            </div>
+            <!-- Pillar 3 -->
+            <div class="pillar-card">
+                <div class="pillar-icon practice">☀️</div>
+                <h3>Practice</h3>
+                <p class="pillar-mood">"I want to learn or do something"</p>
+                <p>
+                    Breathing exercises, reflective prompts, quizzes, and knowledge.
+                    An intentional space for growth and self-awareness.
+                </p>
+            </div>
+            <!-- Pillar 4 -->
+            <div class="pillar-card">
+                <div class="pillar-icon mirror">🌸</div>
+                <h3>Affirmation Mirror</h3>
+                <p class="pillar-mood">"I see myself"</p>
+                <p>
+                    An intimate space with your camera and reflection. Affirmations
+                    respond to your emotions — no analysis, just presence.
+                </p>
+            </div>
+            <!-- Pillar 5 -->
+            <div class="pillar-card">
+                <div class="pillar-icon coach">🧠</div>
+                <h3>AI Coach</h3>
+                <p class="pillar-mood">"Someone guides me"</p>
+                <p>
+                    Personalised dialogue, reflections, and suggestions. AI that speaks
+                    the language of affirmation, not analysis.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============== EMOTIONAL PALETTE =============== -->
+<section class="emotions" id="emotions">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-label">Emotional palette</span>
+            <h2>Colors that feel, not just look</h2>
+            <p>
+                INOYA's emotional accent system uses colour sparingly — to reflect
+                inner states, not to decorate.
+            </p>
+        </div>
+        <div class="emotions-grid stagger">
+            <div class="emotion-card hope">
+                <div class="emotion-circle"></div>
+                <h3>Hope</h3>
+                <p>Warm Gold · #E8C77A</p>
+            </div>
+            <div class="emotion-card calm">
+                <div class="emotion-circle"></div>
+                <h3>Calm</h3>
+                <p>Soft Blue · #9BB7C4</p>
+            </div>
+            <div class="emotion-card care">
+                <div class="emotion-circle"></div>
+                <h3>Care</h3>
+                <p>Gentle Pink · #D6A8A1</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============== MOMENT =============== -->
+<section class="moment" id="moment">
+    <div class="container moment-inner">
+        <div class="moment-visual fade-in">
+            <div class="moment-mockup">
+                <div class="moment-mockup-screen">
+                    <div class="mock-time">NOW</div>
+                    <div class="mock-prompt">What is alive<br />in you right now?</div>
+                    <div class="mock-input">Start writing...</div>
+                </div>
+            </div>
+        </div>
+        <div class="moment-text fade-in">
+            <h2>A moment is not a post.<br />It's a <em>shelter for a feeling.</em></h2>
+            <p>
+                In INOYA, adding a moment is quiet, free of pressure, and free of judgement.
+                You don't "create a post" — you give shelter to a feeling.
+            </p>
+            <ul class="moment-list">
+                <li>No likes, no shares, no audience</li>
+                <li>No "right way" to capture a moment</li>
+                <li>Timeline & map views of your life</li>
+                <li>Photos, words, location — or just silence</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- =============== QUOTE =============== -->
+<section class="quote-section">
+    <div class="container">
+        <div class="quote-inner fade-in">
+            <blockquote>
+                "The user doesn't create an entry.<br />
+                They give shelter to a moment."
+            </blockquote>
+            <cite>— INOYA design philosophy</cite>
+        </div>
+    </div>
+</section>
+
+<!-- =============== CTA =============== -->
+<section class="cta-section" id="cta">
+    <div class="container">
+        <div class="cta-inner fade-in">
+            <h2>Be among the first to find your quiet place</h2>
+            <p>
+                INOYA is being crafted with care. Leave your email to get early access
+                when we launch.
+            </p>
+            <form class="cta-email" onsubmit="event.preventDefault()">
+                <input type="email" placeholder="your@email.com" required />
+                <button type="submit" class="btn btn-primary">Join waitlist</button>
+            </form>
+            <p class="cta-note">No spam. Just a gentle notification when INOYA is ready.</p>
+        </div>
+    </div>
+</section>
+
+<!-- =============== FOOTER =============== -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <span class="footer-logo">INOYA</span>
+        <ul class="footer-links">
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#pillars">Features</a></li>
+            <li><a href="#moment">Moments</a></li>
+            <li><a href="mailto:hello@inoya.app">Contact</a></li>
+        </ul>
+        <span class="footer-copy">&copy; 2026 INOYA. All rights reserved.</span>
+    </div>
+</footer>
+
+<!-- =============== SCRIPTS =============== -->
+<script>
+    // Scroll animations (Intersection Observer)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in, .stagger').forEach(el => observer.observe(el));
+
+    // Nav shadow on scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+    });
+</script>
+
 </body>
 </html>
