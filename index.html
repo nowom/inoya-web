@@ -1,267 +1,278 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Inoya — bezpieczne miejsce na chwile, emocje i refleksję." />
-    <meta name="theme-color" content="#7D8C91" />
-    <title>Inoya</title>
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Inoya" />
-    <meta property="og:description" content="Bezpieczne miejsce na chwile, emocje i refleksję." />
-    <meta property="og:type" content="website" />
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inoya — reset, który przywraca klarowność</title>
+    <meta
+      name="description"
+      content="Inoya to spokojna przestrzeń do krótkiego resetu mentalnego: oddech, zrzut myśli, priorytet, mały krok i domknięcie."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-<!-- Top bar -->
-<header class="top">
-    <div class="container top__inner">
-        <a class="brand" href="#top" aria-label="Inoya">
-            <span class="brand__dot" aria-hidden="true"></span>
-            <span class="brand__name">Inoya</span>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a href="#top" class="brand" aria-label="Inoya, do góry strony">
+          <span class="brand__mark"></span>
+          <span>Inoya</span>
         </a>
 
-        <nav class="nav" aria-label="Nawigacja">
-            <a href="#features">Co daje</a>
-            <a href="#how">Jak działa</a>
-            <a href="#download">Pobierz</a>
-            <a href="#faq">FAQ</a>
+        <nav class="nav" aria-label="Główna nawigacja">
+          <a href="#idea">Dlaczego Inoya</a>
+          <a href="#reset">Jak działa reset</a>
+          <a href="#difference">Co się zmieniło</a>
+          <a href="#faq">FAQ</a>
         </nav>
 
-        <a class="btn btn--small" href="#download">Pobierz</a>
-    </div>
-</header>
+        <a class="btn btn--primary" href="#download">Pobierz</a>
+      </div>
+    </header>
 
-<main id="top">
-    <!-- HERO -->
-    <section class="hero">
+    <main id="top">
+      <section class="hero">
         <div class="container hero__grid">
-            <div class="hero__copy">
-                <p class="kicker">🌿 Inoya</p>
-                <h1>Bezpieczne miejsce na chwile, które mają znaczenie.</h1>
-                <p class="sub">
-                    Zapisuj momenty. Zauważaj emocje. Wracaj do siebie — spokojnie i bez presji.
-                </p>
-
-                <div class="cta">
-                    <!-- TODO: podmień linki na swoje -->
-                    <a class="btn" href="#download">Pobierz aplikację</a>
-                    <a class="btn btn--ghost" href="#feedback">Zostaw feedback</a>
-                </div>
-
-                <div class="badges" aria-label="Szybkie informacje">
-                    <div class="badge">📷 Moment</div>
-                    <div class="badge">😌 Emocja</div>
-                    <div class="badge">🎧 Afirmacje</div>
-                </div>
-
-                <p class="note">
-                    MVP jest publiczne. Jeśli coś jest niejasne — feedback pomoże mi ulepszyć Inoya.
-                </p>
-            </div>
-
-            <div class="hero__card" aria-label="Podgląd stylu aplikacji">
-                <div class="mock">
-                    <div class="mock__top">
-                        <div class="mock__pill"></div>
-                        <div class="mock__pill mock__pill--short"></div>
-                    </div>
-                    <div class="mock__content">
-                        <div class="mock__title">Dziś</div>
-                        <div class="mock__line"></div>
-                        <div class="mock__line mock__line--w"></div>
-
-                        <div class="mock__snap">
-                            <div class="mock__img" aria-hidden="true"></div>
-                            <div class="mock__meta">
-                                <div class="mock__line mock__line--w2"></div>
-                                <div class="mock__line mock__line--w3"></div>
-                            </div>
-                        </div>
-
-                        <div class="mock__chips">
-                            <span class="chip">Spokój</span>
-                            <span class="chip">Wdzięczność</span>
-                            <span class="chip">Obecność</span>
-                        </div>
-
-                        <div class="mock__btn">+ Dodaj moment</div>
-                    </div>
-                </div>
-
-                <p class="mock__caption">Minimalnie. Ciepło. Bez nadmiaru.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section id="features" class="section">
-        <div class="container">
-            <h2>Co Inoya daje w MVP</h2>
-            <p class="lead">
-                Trzy proste rzeczy — dokładnie takie, które zobaczysz po instalacji.
+          <div>
+            <span class="eyebrow">Nowy kierunek produktu</span>
+            <h1>Reset, który prowadzi od chaosu do klarowności.</h1>
+            <p class="hero__lead">
+              Inoya nie jest kolejną aplikacją do self-care. To spokojna przestrzeń do krótkiego resetu mentalnego —
+              oddech, zrzut myśli, priorytet, mały krok i domknięcie.
             </p>
 
-            <div class="grid3">
-                <article class="card">
-                    <div class="card__icon">📸</div>
-                    <h3>Uchwyć moment</h3>
-                    <p>Zapisz zdjęcie lub tekst. Dodaj krótki opis, bez perfekcji.</p>
-                </article>
-
-                <article class="card">
-                    <div class="card__icon">😌</div>
-                    <h3>Zauważ emocję</h3>
-                    <p>Oznacz nastrój i wróć do niego później. Bez oceniania.</p>
-                </article>
-
-                <article class="card">
-                    <div class="card__icon">🎧</div>
-                    <h3>Delikatna afirmacja</h3>
-                    <p>Krótka myśl, która pomaga się zatrzymać i złapać oddech.</p>
-                </article>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#download">Pobierz aplikację</a>
+              <a class="btn btn--secondary" href="#reset">Zobacz flow resetu</a>
             </div>
-        </div>
-    </section>
 
-    <!-- HOW IT WORKS -->
-    <section id="how" class="section section--alt">
-        <div class="container">
-            <h2>Jak to działa</h2>
-            <p class="lead">60 sekund dziennie, kiedy chcesz — nie kiedy musisz.</p>
+            <div class="hero__notes">
+              <span class="tag">1–3 minuty</span>
+              <span class="tag">jedno doświadczenie</span>
+              <span class="tag">bez presji i nadmiaru</span>
+            </div>
+          </div>
 
-            <ol class="steps">
-                <li class="step">
-                    <div class="step__n">1</div>
-                    <div class="step__body">
-                        <h3>Dodaj moment</h3>
-                        <p>Zdjęcie lub tekst. Jedno zdanie też jest OK.</p>
-                    </div>
-                </li>
-                <li class="step">
-                    <div class="step__n">2</div>
-                    <div class="step__body">
-                        <h3>Wybierz emocję</h3>
-                        <p>Najbliższą temu, co czujesz tu i teraz.</p>
-                    </div>
-                </li>
-                <li class="step">
-                    <div class="step__n">3</div>
-                    <div class="step__body">
-                        <h3>Wracaj do zapisów</h3>
-                        <p>Oś czasu i widok wpisu — żeby pamiętać to, co ważne.</p>
-                    </div>
-                </li>
-            </ol>
-        </div>
-    </section>
+          <div class="phone-shell">
+            <div class="phone" aria-label="Podgląd ekranu Inoya">
+              <div class="phone__status">
+                <span>8:11</span>
+                <span>Inoya</span>
+              </div>
 
-    <!-- DOWNLOAD -->
-    <section id="download" class="section">
-        <div class="container download">
-            <div>
-                <h2>Pobierz Inoya</h2>
-                <p class="lead">
-                    MVP jest publiczne. Jeśli możesz — zostaw krótką opinię po użyciu.
-                </p>
+              <h2 class="phone__title">Pause.</h2>
+              <p class="phone__subtitle">Take one calm breath.</p>
 
-                <div class="cta">
-                    <!-- TODO: wstaw realne linki -->
-                    <a class="btn" href="#" aria-disabled="true">Google Play (wstaw link)</a>
-                    <a class="btn btn--ghost" href="#" aria-disabled="true">Strona produktu (opcjonalnie)</a>
+              <div class="breath-orb">
+                <div class="breath-orb__inner">
+                  <strong>Start</strong>
+                  <span>reset</span>
                 </div>
+              </div>
 
-                <p class="note">
-                    Tip: dodaj link do Google Play w powyższy przycisk, gdy aplikacja będzie już opublikowana.
-                </p>
+              <p class="feeling-label">How do you feel?</p>
+              <div class="chips">
+                <span class="chip chip--active">Overwhelmed</span>
+                <span class="chip">Tense</span>
+                <span class="chip">Heavy</span>
+                <span class="chip">Distracted</span>
+              </div>
+
+              <div class="reflection-preview">
+                <div class="reflection-preview__meta">3 moments of clarity this week.</div>
+                <div class="reflection-preview__card">Send the message</div>
+              </div>
             </div>
-
-            <div class="download__box">
-                <h3>Co jest w MVP?</h3>
-                <ul class="list">
-                    <li>Dodawanie momentów (tekst/zdjęcie)</li>
-                    <li>Emocja + opis</li>
-                    <li>Lista / szczegóły wpisu</li>
-                    <li>Afirmacje (prosta, spokojna forma)</li>
-                </ul>
-
-                <p class="small">
-                    Bez obietnic. Bez nadęcia. Tylko to, co działa teraz.
-                </p>
-            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- FEEDBACK -->
-    <section id="feedback" class="section section--alt">
+      <section id="idea">
         <div class="container">
-            <h2>Feedback</h2>
-            <p class="lead">Jedno zdanie może realnie poprawić Inoya.</p>
+          <div class="section-head">
+            <span class="eyebrow">Dlaczego to działa</span>
+            <h2>Jeden rdzeń produktu zamiast kilku niespójnych modułów.</h2>
+            <p>
+              Nowa wersja landing page pokazuje Inoya jako narzędzie do regulacji napięcia. Nie sprzedaje wszystkiego naraz.
+              Najpierw pokazuje problem, potem prosty proces i dopiero na końcu resztę kontekstu.
+            </p>
+          </div>
 
-            <div class="grid2">
-                <div class="card card--soft">
-                    <h3>Najprościej: formularz</h3>
-                    <p>
-                        Wklej tutaj link do ankiety (Typeform / Google Forms) lub własnego formularza.
-                    </p>
-                    <!-- TODO: podmień na prawdziwy link -->
-                    <a class="btn btn--ghost" href="#" aria-disabled="true">Otwórz formularz</a>
-                </div>
+          <div class="grid-3">
+            <article class="card">
+              <div class="card__num">01</div>
+              <h3>Zatrzymanie</h3>
+              <p>Wejście do aplikacji powinno od razu prowadzić do oddechu i wyciszenia, nie do eksploracji funkcji.</p>
+            </article>
 
-                <div class="card card--soft">
-                    <h3>Co napisać?</h3>
-                    <ul class="list">
-                        <li>Co było super?</li>
-                        <li>Co było niejasne?</li>
-                        <li>Co byś usunął / dodał jako pierwsze?</li>
-                    </ul>
-                </div>
-            </div>
+            <article class="card">
+              <div class="card__num">02</div>
+              <h3>Klarowność</h3>
+              <p>Flow resetu porządkuje myśli krok po kroku: bez pośpiechu, bez nadmiaru decyzji, bez przeciążenia.</p>
+            </article>
+
+            <article class="card">
+              <div class="card__num">03</div>
+              <h3>Mały krok</h3>
+              <p>Efektem nie jest kolejny wpis w dzienniku, ale jedno proste działanie, które daje poczucie kierunku.</p>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section">
+      <section id="reset" class="reset">
         <div class="container">
-            <h2>FAQ</h2>
+          <div class="section-head">
+            <span class="eyebrow">Flow resetu</span>
+            <h2>Pięć kroków. Jedno spokojne doświadczenie.</h2>
+            <p>
+              Landing od razu komunikuje, że Inoya ma bardzo konkretną obietnicę: wejść w chaosie, wyjść spokojniejszym.
+            </p>
+          </div>
 
-            <div class="faq">
-                <details class="qa">
-                    <summary>Czy Inoya to terapia?</summary>
-                    <p>Nie. To narzędzie do refleksji i uważności. Jeśli potrzebujesz wsparcia, warto skonsultować się ze specjalistą.</p>
-                </details>
+          <div class="timeline">
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <h3>1. Oddech</h3>
+                <p>Najpierw ciało. Krótka regulacja napięcia, zanim użytkownik zacznie cokolwiek analizować.</p>
+              </div>
+            </article>
 
-                <details class="qa">
-                    <summary>Czy wszystko jest w MVP?</summary>
-                    <p>MVP ma mały zakres. Landing opisuje tylko to, co jest dostępne teraz.</p>
-                </details>
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <h3>2. Zrzut myśli</h3>
+                <p>Wszystko, co ciężkie, może wyjść w prostych słowach. Bez obowiązku pisania idealnie.</p>
+              </div>
+            </article>
 
-                <details class="qa">
-                    <summary>Jak mogę pomóc?</summary>
-                    <p>Najbardziej: użyj przez kilka dni i zostaw feedback (co działa, a co przeszkadza).</p>
-                </details>
-            </div>
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <h3>3. Co jest najważniejsze</h3>
+                <p>Chaos zaczyna się układać, gdy użytkownik nazywa jedną rzecz, która naprawdę ma znaczenie teraz.</p>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <h3>4. Najmniejszy możliwy krok</h3>
+                <p>Nie plan. Nie lista. Jedno małe działanie, które jest możliwe dziś.</p>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div>
+                <h3>5. Domknięcie</h3>
+                <p>Krótki moment uspokojenia, który zamyka proces i zostawia użytkownika z ulgą oraz kierunkiem.</p>
+              </div>
+            </article>
+          </div>
         </div>
-    </section>
-</main>
+      </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container footer__inner">
-        <p class="small">© <span id="y"></span> Inoya</p>
+      <section id="difference">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Zmiana komunikacji</span>
+            <h2>Nie „appka z funkcjami”. Tylko wyraźna obietnica.</h2>
+            <p>
+              Ten landing przenosi ciężar z opisywania wielu modułów na jedno główne doświadczenie. Dzięki temu strona jest czytelniejsza i bliższa temu, czym Inoya ma być po zmianie kierunku.
+            </p>
+          </div>
+
+          <div class="compare">
+            <div class="compare__box compare__box--before">
+              <span class="compare__label">wcześniej</span>
+              <ul>
+                <li><strong>dużo funkcji</strong> naraz: momenty, emocje, afirmacje, coach</li>
+                <li><strong>większy ciężar MVP</strong> niż realnej obietnicy produktu</li>
+                <li><strong>narracja bardziej katalogowa</strong> niż doświadczeniowa</li>
+              </ul>
+            </div>
+
+            <div class="compare__box compare__box--after">
+              <span class="compare__label">teraz</span>
+              <ul>
+                <li><strong>jeden główny use case</strong>: szybki reset mentalny</li>
+                <li><strong>prosta ścieżka</strong>: problem → proces → efekt</li>
+                <li><strong>spokojny ton</strong>, zgodny z interfejsem aplikacji</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download">
+        <div class="container cta-panel">
+          <div class="cta-panel__main">
+            <span class="eyebrow">Pobierz</span>
+            <h2>Gotowe na nową wersję landing page po zmianie kierunku.</h2>
+            <p>
+              Zostawiłem strukturę prostą do dalszego rozwijania. Możesz podmienić linki, copy i kolory bez ruszania całego layoutu.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#">Google Play</a>
+              <a class="btn btn--secondary" href="#">Zostaw feedback</a>
+            </div>
+          </div>
+
+          <aside class="cta-panel__side">
+            <h3>Co łatwo zmienisz</h3>
+            <ul class="list">
+              <li>kolory w sekcji <strong>:root</strong></li>
+              <li>tekst hero i CTA</li>
+              <li>mockup telefonu lub screenshot aplikacji</li>
+              <li>dodatkową sekcję o historii, AI lub coachu</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">FAQ</span>
+            <h2>Najważniejsze pytania na start.</h2>
+          </div>
+
+          <div class="faq">
+            <details>
+              <summary>Czy Inoya to terapia?</summary>
+              <p>Nie. To narzędzie do krótkiej autoregulacji i uporządkowania myśli. Nie zastępuje wsparcia specjalisty.</p>
+            </details>
+
+            <details>
+              <summary>Czy landing można łatwo dostosować do nowych kolorów?</summary>
+              <p>Tak. Wszystkie najważniejsze barwy są zebrane w zmiennych CSS na początku pliku, więc później zmienisz je w jednym miejscu.</p>
+            </details>
+
+            <details>
+              <summary>Czy ta wersja lepiej pasuje do nowego produktu?</summary>
+              <p>Tak, bo stawia w centrum reset mentalny, który jest teraz Twoim głównym doświadczeniem i najmocniejszą obietnicą produktu.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© Inoya</span>
         <div class="footer__links">
-            <!-- TODO: podmień lub usuń -->
-            <a href="#feedback">Feedback</a>
-            <a href="#top">Do góry</a>
+          <a href="#top">Do góry</a>
+          <a href="#reset">Flow resetu</a>
+          <a href="#download">Pobierz</a>
         </div>
-    </div>
-</footer>
-
-<script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-</script>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
