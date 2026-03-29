@@ -570,6 +570,24 @@ details p {
   flex-wrap: wrap;
 }
 
+.store-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* lepsze dopasowanie do headera */
+.topbar .btn {
+  min-height: 44px;
+  padding: 0 16px;
+  font-size: 0.95rem;
+}
+
+/* subtle premium tweak */
+.topbar .btn--secondary {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 @media (max-width: 980px) {
   .hero__grid,
   .cta-panel,
