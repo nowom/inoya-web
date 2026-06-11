@@ -4,62 +4,87 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Inoya — spokojny reset dla przeciążonej głowy</title>
-  <meta name="description" content="Inoya pomaga zatrzymać się na 1–3 minuty, złapać oddech, uporządkować myśli i znaleźć jeden mały krok dalej." />
-  <meta property="og:title" content="Inoya — złap oddech i odzyskaj jasność" />
-  <meta property="og:description" content="Krótki, prowadzony reset mentalny: oddech, zrzut myśli, priorytet, mały krok i spokojne domknięcie." />
+  <meta name="description" content="Inoya pomaga zatrzymać się na chwilę, złapać oddech, uporządkować myśli i znaleźć jeden mały krok dalej." />
+  <meta property="og:title" content="Inoya — find clarity in a single moment" />
+  <meta property="og:description" content="A calm reset for busy minds. One breath. One thought. One small step forward." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="top">
-    <div class="container top__inner">
-      <a class="brand" href="#top" aria-label="Inoya — strona główna">
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Inoya">
         <span class="brand__mark" aria-hidden="true"></span>
         <span>Inoya</span>
       </a>
+
       <nav class="nav" aria-label="Nawigacja">
         <a href="#why">Dlaczego</a>
         <a href="#flow">Jak działa</a>
         <a href="#download">Pobierz</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <a class="btn btn--small" href="#download">Pobierz</a>
+
+      <a class="btn btn--secondary" href="#download">Pobierz</a>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero section">
+    <section class="hero">
       <div class="container hero__grid">
         <div class="hero__copy">
           <p class="eyebrow">Spokojny reset dla przeciążonej głowy</p>
-          <h1>Złap oddech. Uporządkuj myśli. Zrób jeden mały krok.</h1>
-          <p class="hero__lead">Inoya prowadzi Cię przez krótki reset mentalny — od napięcia i chaosu do większej jasności w 1–3 minuty.</p>
-          <div class="cta">
-            <a class="btn" href="#download">Pobierz aplikację</a>
-            <a class="btn btn--ghost" href="#flow">Zobacz flow</a>
+          <h1>Find clarity in a single moment.</h1>
+          <p class="hero__lead">Inoya to spokojna przestrzeń na krótki reset. Jeden oddech. Jedna myśl. Jeden mały krok dalej.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.inoya.app">Google Play</a>
+            <a class="btn btn--secondary" href="https://apps.apple.com/">App Store</a>
           </div>
-          <div class="trust" aria-label="Najważniejsze cechy">
-            <span>1–3 minuty</span>
-            <span>bez presji</span>
-            <span>jeden spokojny proces</span>
+
+          <div class="hero__notes" aria-label="Najważniejsze cechy">
+            <span class="tag">1–3 minute reset</span>
+            <span class="tag">one calm experience</span>
+            <span class="tag">less noise, more clarity</span>
           </div>
         </div>
 
-        <div class="phoneWrap" aria-label="Podgląd aplikacji Inoya">
+        <div class="phone-shell" aria-label="Podgląd aplikacji Inoya">
           <div class="phone">
-            <div class="phone__bar">
+            <div class="phone__status">
               <span>8:11</span>
               <span>Inoya</span>
             </div>
-            <div class="phone__screen">
-              <p class="phone__label">Dzisiejszy reset</p>
-              <h2>Zatrzymaj się na chwilę.</h2>
-              <div class="breath" aria-hidden="true"><span></span></div>
-              <p class="phone__text">Oddychaj spokojnie. Nic więcej nie musisz teraz robić.</p>
-              <button class="phone__button">Start reset</button>
-              <div class="reflection">
-                <small>Ostatnia jasność</small>
-                <strong>Odpisać na jedną wiadomość</strong>
+
+            <div class="phone__hero">
+              <p class="phone__kicker">Today</p>
+              <h2 class="phone__title">Złap<br>oddech.</h2>
+              <p class="phone__subtitle">A calm reset when your head feels full.</p>
+            </div>
+
+            <div class="breath-orb" aria-hidden="true">
+              <div class="breath-orb__inner">
+                <strong>Pause</strong>
+                <span>4 calm breaths</span>
+              </div>
+            </div>
+
+            <button class="phone__cta">Start reset</button>
+
+            <div class="mood-row" aria-label="Opcjonalny wybór stanu">
+              <p>How do you feel?</p>
+              <div class="chips">
+                <span class="chip chip--active">Overwhelmed</span>
+                <span class="chip">Tense</span>
+                <span class="chip">Heavy</span>
+              </div>
+            </div>
+
+            <div class="reflection-preview">
+              <div class="reflection-preview__meta">Last clarity</div>
+              <div class="reflection-preview__card">
+                <small>Next small step</small>
+                <strong>Send one message</strong>
               </div>
             </div>
           </div>
@@ -67,93 +92,148 @@
       </div>
     </section>
 
-    <section id="why" class="section section--soft">
-      <div class="container narrow">
-        <p class="eyebrow">Dlaczego Inoya</p>
-        <h2>Nie kolejna lista zadań. Nie dziennik do wypełniania. Jedno doświadczenie, które pomaga wrócić do siebie.</h2>
-        <p class="lead">Kiedy w głowie robi się za dużo, nie potrzebujesz kolejnych opcji. Potrzebujesz spokojnego prowadzenia: zatrzymać ciało, wypuścić myśli, nazwać jedną rzecz i wybrać mały krok.</p>
-      </div>
-      <div class="container cards cards--three">
-        <article class="card">
-          <span class="card__number">01</span>
-          <h3>Mniej napięcia</h3>
-          <p>Flow zaczyna się od oddechu, zanim użytkownik zacznie analizować problem.</p>
-        </article>
-        <article class="card">
-          <span class="card__number">02</span>
-          <h3>Więcej jasności</h3>
-          <p>Myśli trafiają na zewnątrz, a aplikacja pomaga znaleźć to, co teraz najważniejsze.</p>
-        </article>
-        <article class="card">
-          <span class="card__number">03</span>
-          <h3>Jeden mały krok</h3>
-          <p>Bez planowania całego życia. Tylko coś prostego, możliwego do zrobienia dziś.</p>
-        </article>
+    <section id="why">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Dlaczego Inoya</p>
+          <h2>One simple ritual to help you come back to yourself.</h2>
+          <p>Inoya nie prosi Cię o zarządzanie kolejnymi rzeczami. Pomaga zatrzymać ciało, wypuścić napięcie z głowy i znaleźć najbliższy możliwy krok.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <span class="card__num">01</span>
+            <h3>Pause</h3>
+            <p>Doświadczenie zaczyna się od oddechu, nie od analizy. Najpierw mniej napięcia, dopiero potem refleksja.</p>
+          </article>
+          <article class="card">
+            <span class="card__num">02</span>
+            <h3>Release</h3>
+            <p>To, co ciężkie, można nazwać prostymi słowami. Bez idealnego journalingu i bez oceniania.</p>
+          </article>
+          <article class="card">
+            <span class="card__num">03</span>
+            <h3>Move gently</h3>
+            <p>Celem nie jest plan na wszystko. Celem jest jeden mały krok, który jest możliwy dzisiaj.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="flow" class="section">
-      <div class="container flowGrid">
-        <div>
+    <section id="flow" class="reset">
+      <div class="container">
+        <div class="section-head">
           <p class="eyebrow">Jak działa</p>
-          <h2>Od chaosu do klarowności — ekran po ekranie.</h2>
-          <p class="lead">Reset jest zawsze prosty i prowadzony. Każdy ekran ma jedną decyzję, bez oceniania, wyników i presji produktywności.</p>
+          <h2>A gentle flow from overwhelm to clarity.</h2>
+          <p>Każdy reset prowadzi użytkownika przez tę samą spokojną sekwencję: regulacja ciała → zrzut myśli → priorytet → mały krok → domknięcie.</p>
         </div>
-        <ol class="timeline">
-          <li><span>1</span><div><h3>Oddech</h3><p>Krótka regulacja ciała, żeby obniżyć napięcie.</p></div></li>
-          <li><span>2</span><div><h3>Zrzut myśli</h3><p>Napisz wszystko, co wydaje się ciężkie. Bez porządkowania.</p></div></li>
-          <li><span>3</span><div><h3>Priorytet</h3><p>Z całego szumu wybierz jedną rzecz, która jest teraz ważna.</p></div></li>
-          <li><span>4</span><div><h3>Mały krok</h3><p>Wybierz najmniejsze możliwe działanie na dziś.</p></div></li>
-          <li><span>5</span><div><h3>Domknięcie</h3><p>Krótka myśl stabilizująca: na teraz wystarczy jeden krok.</p></div></li>
-        </ol>
+
+        <div class="timeline">
+          <article class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div>
+              <h3>1. Breathe</h3>
+              <p>Krótki moment oddechu pomaga zwolnić, zanim umysł zacznie porządkować to, co ciężkie.</p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div>
+              <h3>2. Let it out</h3>
+              <p>Wszystko może wyjść prostym językiem. Nie trzeba tego jeszcze układać.</p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div>
+              <h3>3. Focus</h3>
+              <p>Z całego szumu zaczyna wyłaniać się jedna rzecz, która teraz jest najważniejsza.</p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div>
+              <h3>4. Take one small step</h3>
+              <p>Zamiast rozwiązywać wszystko, użytkownik wybiera jedno możliwe działanie na dziś.</p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div>
+              <h3>5. Close softly</h3>
+              <p>Reset kończy się spokojnym domknięciem: na teraz wystarczy jeden mały krok.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section quoteSection">
-      <div class="container quoteBox">
-        <p>„Nie musisz rozwiązać wszystkiego naraz. Wystarczy, że wniesiesz trochę jasności do tej chwili.”</p>
-      </div>
-    </section>
-
-    <section id="download" class="section download">
-      <div class="container download__inner">
-        <div>
-          <p class="eyebrow">Pobierz Inoya</p>
-          <h2>Wejdź w chaosie. Wyjdź spokojniejszy.</h2>
-          <p class="lead">Zacznij od jednego oddechu, jednej szczerej myśli i jednego małego kroku dalej.</p>
-          <div class="cta">
-            <a class="btn" href="https://play.google.com/store/apps/details?id=com.inoya.app">Google Play</a>
-            <a class="btn btn--ghost" href="https://apps.apple.com/">App Store</a>
-          </div>
-        </div>
-        <div class="downloadCard">
-          <h3>Co dostajesz w aplikacji?</h3>
+    <section>
+      <div class="container compare">
+        <div class="compare__box compare__box--before">
+          <span class="compare__label">Before</span>
           <ul>
-            <li>prowadzony reset mentalny</li>
-            <li>historię momentów jasności</li>
-            <li>spokojny, minimalny interfejs</li>
-            <li>bez presji, ocen i nadmiaru funkcji</li>
+            <li><strong>Chaos w głowie</strong> i zbyt wiele rzeczy naraz.</li>
+            <li><strong>Napięcie</strong>, które utrudnia rozpoczęcie działania.</li>
+            <li><strong>Presja</strong>, że trzeba wszystko rozwiązać od razu.</li>
+          </ul>
+        </div>
+        <div class="compare__box compare__box--after">
+          <span class="compare__label">After</span>
+          <ul>
+            <li><strong>Spokojniejsze ciało</strong> po kilku oddechach.</li>
+            <li><strong>Jedna ważna rzecz</strong> wyciągnięta z chaosu.</li>
+            <li><strong>Mały krok</strong>, który można zrobić dziś.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="section faq">
-      <div class="container narrow">
-        <p class="eyebrow">FAQ</p>
-        <h2>Krótko i jasno.</h2>
-        <details>
-          <summary>Czy Inoya to terapia?</summary>
-          <p>Nie. Inoya to samodzielne narzędzie do krótkiego resetu i refleksji. Nie zastępuje wsparcia specjalisty.</p>
-        </details>
-        <details>
-          <summary>Czy muszę wszystko wpisywać?</summary>
-          <p>Nie. Reset ma zmniejszać napięcie, nie tworzyć formularz. Wpisujesz tyle, ile pomaga.</p>
-        </details>
-        <details>
-          <summary>Czym Inoya różni się od journalingu?</summary>
-          <p>Nie chodzi o długi dziennik. Chodzi o szybkie przejście: oddech → myśli → priorytet → mały krok → domknięcie.</p>
-        </details>
+    <section id="download">
+      <div class="container cta-panel">
+        <div class="cta-panel__main">
+          <p class="eyebrow">Pobierz Inoya</p>
+          <h2>Take a moment. Start your reset.</h2>
+          <p>Zacznij od jednego spokojnego oddechu, jednej szczerej myśli i jednego małego kroku dalej.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.inoya.app">Google Play</a>
+            <a class="btn btn--secondary" href="https://apps.apple.com/">App Store</a>
+          </div>
+        </div>
+
+        <aside class="cta-panel__side">
+          <h3>Built for a calmer experience</h3>
+          <ul class="list">
+            <li>jedno główne wejście</li>
+            <li>miękki, minimalny interfejs</li>
+            <li>reset bez presji i wyników</li>
+            <li>spójny ekran aplikacji z finalnym flow</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions, answered simply.</h2>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Czy Inoya to terapia?</summary>
+            <p>Nie. Inoya to samodzielne narzędzie do krótkiego resetu, regulacji napięcia i odzyskiwania jasności. Nie zastępuje pomocy specjalisty.</p>
+          </details>
+          <details>
+            <summary>Czy muszę wszystko wpisywać?</summary>
+            <p>Nie. Flow ma zmniejszać napięcie, nie tworzyć formularz. Wpisujesz tyle, ile pomaga.</p>
+          </details>
+          <details>
+            <summary>Czym Inoya różni się od klasycznego journalingu?</summary>
+            <p>Nie chodzi o długi dziennik. Chodzi o krótkie prowadzone przejście: oddech, myśli, priorytet, mały krok i domknięcie.</p>
+          </details>
+        </div>
       </div>
     </section>
   </main>
@@ -162,9 +242,10 @@
     <div class="container footer__inner">
       <span>© Inoya</span>
       <div class="footer__links">
-        <a href="privacy.html">Prywatność</a>
-        <a href="terms.html">Regulamin</a>
-        <a href="delete-account.html">Usuń konto</a>
+        <a href="#top">Top</a>
+        <a href="#flow">How it works</a>
+        <a href="#download">Download</a>
+        <a href="privacy.html">Privacy Policy</a>
       </div>
     </div>
   </footer>
